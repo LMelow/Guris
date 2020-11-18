@@ -1,5 +1,6 @@
 import java.util.Scanner;
 class Num{
+    
     public static void main(String args[]){
         Scanner teclado = new Scanner (System.in);
         System.out.println("Informe a quantidade de inteiros: ");
@@ -29,29 +30,14 @@ class Num{
         }
         int primo = 0;
 
-        for (int j=0; j<valor.length;j++){
-            if (valor[j] % 2 == 0)
-                primo +=1;   
+        for (int j=2; j<valor.length;j++){
+            for (int i=0; i<valor.length;i++)
+                if (valor[j] % valor[i] == 0){
+                    primo +=1;   
             }
-    
+        }
         System.out.println("maior = "+maior+" menor = " +menor+ "  media = "+f1+" primos = "+primo);
+    }
         
-    }
-
 }
-class data{
-    public int dia = 1;
-    public String mes= "abril";
-    public int ano = 2019;
-    public int horas = 14;
-    public int minutos = 34;
-    
-    public void imprime(){
-        System.out.println("dia "+dia+"º de "+mes+"de "+ano+", às "+horas+":"+minutos);
-    }
-}
-
-
-//Crie uma data d1 para representar o dia 1º de abril de 2019, às 14:34.
-//tem que implementar os primos agora, do vetor valor[], vou fazendo... blz
 
