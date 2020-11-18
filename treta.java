@@ -27,12 +27,31 @@ class Num{
             }
         f1= media/cont;
         }
+        int primo = 0;
 
+        for (int j=0; j<valor.length;j++){
+            if (valor[j] % 2 == 0)
+                primo +=1;   
+            }
     
-        System.out.println("maior = "+maior+" menor = " +menor+ "  media = "+f1);
+        System.out.println("maior = "+maior+" menor = " +menor+ "  media = "+f1+" primos = "+primo);
         
     }
 
 }
-//ta printando um E9 no meio dps de m sim, agora foi, ajustei as variaveis, ss , man como manda no git?eu faço o bl só dale
-// e aquele lance da data?//qual é o teu user no git? pedro-lill
+class data{
+    public int dia = 1;
+    public String mes= "abril";
+    public int ano = 2019;
+    public int horas = 14;
+    public int minutos = 34;
+    
+    public void imprime(){
+        System.out.println("dia "+dia+"º de "+mes+"de "+ano+", às "+horas+":"+minutos);
+    }
+}
+
+
+//Crie uma data d1 para representar o dia 1º de abril de 2019, às 14:34.
+//tem que implementar os primos agora, do vetor valor[], vou fazendo... blz
+
